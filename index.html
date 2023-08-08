@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="manifest.json">
+    <script src="scripts.js" ></script>
     <title>Elim Communication</title>
 </head>
 <body>
@@ -13,6 +14,18 @@
         <img src="./img/photo.png" style="width: 100px;" alt="" />
         <h2>Salim CISSÉ</h2>
         <h5>Victime de la revolte 1968</h5>
+
+        <div class="bareDeProgresions" >
+            <span id="elapsed" >0:00</span>
+            <input type="range" id="track" min="0" value="0" />
+            <span id="track-time" >1:00</span>
+        </div>
+        <div class="playBotone">
+            <audio src="./audio/piste1/1-audio.mp3"></audio>
+            <audio src="./audio/piste1/2-audio.mp3"></audio>
+            <audio src="./audio/piste1/3-audio.mp3"></audio>
+            <img src="./icon/play.svg" alt="">
+        </div>
     </div>
    </div> 
 </body>

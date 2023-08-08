@@ -24,3 +24,13 @@
     background-color: rgb(179, 179, 179);
     border-radius: 20px;
 }
+.bareDeProgresions{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bareDeProgresions span{
+    padding: 0px 10px;
+   font-size: 10px; 
+}
