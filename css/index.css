@@ -34,3 +34,7 @@
     padding: 0px 10px;
    font-size: 10px; 
 }
+
+#pause-bottone, #stop-bottone{
+    display: none;
+}
