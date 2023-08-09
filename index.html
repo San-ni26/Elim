@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
     <script src="/scripts.js" defer ></script>
+    <script src="/scriptsDeux.js" defer ></script> 
     <link rel="apple-touch-icon" href="/assets/icons/icon-96x96.png">
   <meta name="apple-mobile-web-app-status-bar" content="white">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -23,7 +24,7 @@
             <audio id="audio" >
                 <source src="./audio/piste1/3-audio.mp3" type="audio/mp3">
             </audio>
-            <img style="margin-left: 10px;" src="./icon/play.svg" 
+            <img style="margin-left: 10px; cursor: pointer;" src="./icon/play.svg" 
             alt="" id="playBottone" > 
 
             <div style="display: flex; justify-content: center; 
@@ -45,7 +46,34 @@
             </div>
 
         </div>
+
+        <div class="playBotone">
+            <audio id="audioDeux" >
+                <source src="./audio/piste1/1-audio.mp3" type="audio/mp3">
+            </audio>
+            <img style="margin-left: 10px; cursor: pointer;" src="./icon/play.svg" 
+            alt="" id="playBottoneDeux" > 
+
+            <div style="display: flex; justify-content: center; 
+            align-items: center; margin-left: 10px; " >
+            
+                <img style="cursor: pointer;" src="/icon/stop.svg" alt="" id="pauseBottoneDeux">
+            
+                
+                <div style="display: flex; flex-direction: 
+                column; margin-left: 10px;" class="infoFran">
+                <h5>Français</h5>
+                <div class="ligeDeLecture">
+                    <span id="elapsedDeux">0:00</span> 
+                    <input type="range" id="trackDeux" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                    <span id="trackTimeDeux">0:00</span> 
+                </div>
+                
+                </div>
+            </div>
+
+        </div> 
     </div>
    </div> 
 </body>
-</html>*-9
+</html>
