@@ -31,11 +31,11 @@
     align-items: center;
 }
 .bareDeProgresions span{
-    padding: 0px 10px;
+    padding: 0px 70px;
    font-size: 10px; 
 }
 
-#play-bottone{
+#playBottoni{
     cursor: pointer;
 } 
 .playBotone{
@@ -50,4 +50,58 @@
 
 
 
+.ligeDeLecture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+.infoFran h5{
+    color: rgb(255, 255, 255);
+}
+.ligeDeLecture span{
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+}
+.ligeDeLecture input{
+    width: 70px;
+    margin: 0px 5px;
+}
 
+
+.seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 3px;
+    background: #f15656;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 20%;
+    }
+    
+    .seek_slider::-webkit-slider-thumb,
+    .volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 7px;
+    height: 7px;
+    background: white;
+    border: 3px solid #f6f6f6;
+    cursor: grab;
+    border-radius: 100%;
+    }
+    
+    .seek_slider:hover,
+    .volume_slider:hover {
+    opacity: 1.0;
+    }
+    
+    .seek_slider {
+    width: 60%;
+    }
+    
+    .volume_slider {
+    width: 30%;
+    }

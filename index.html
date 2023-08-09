@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
-    <script src="./scripts.js" ></script>
+    <script src="/scripts.js" defer ></script>
     <link rel="apple-touch-icon" href="/assets/icons/icon-96x96.png">
   <meta name="apple-mobile-web-app-status-bar" content="white">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,17 +16,31 @@
    <div class="bodi">
     <div class="blocInfo" >
         <img src="./img/photo.png" style="width: 100px;" alt="" />
-        <h2>Salim CISSÉ</h2>
-        <h5>Victime de la revolte 1968</h5>
+        <h2 style="color: rgb(255, 255, 255); font-size: 30px; font-weight: 600;" >Salim CISSÉ</h2>
+        <h5 style="color: rgb(255, 255, 255); font-size: 12px; font-weight: 400;" >Victime de la revolte 1968</h5>
 
         <div class="playBotone">
-            <audio id="audio-1" src="./audio/piste1/1-audio.mp3"></audio>
-            <img style="margin-left: 10px;" src="./icon/play.svg" alt="" id="play-bottone" > 
-            <div style="display: flex; justify-content: center; align-items: center; margin-left: 10px;" >
-                <img src="/icon/ecouteur.svg" alt="">
-                <div style="display: flex; flex-direction: column; margin-left: 10px;" class="infoFran">
+            <audio id="audio" >
+                <source src="./audio/piste1/3-audio.mp3" type="audio/mp3">
+            </audio>
+            <img style="margin-left: 10px;" src="./icon/play.svg" 
+            alt="" id="playBottone" > 
+
+            <div style="display: flex; justify-content: center; 
+            align-items: center; margin-left: 10px; " >
+            
+                <img style="cursor: pointer;" src="/icon/stop.svg" alt="" id="pauseBottone">
+            
+                
+                <div style="display: flex; flex-direction: 
+                column; margin-left: 10px;" class="infoFran">
                 <h5>Français</h5>
-                <span>2:40</span>
+                <div class="ligeDeLecture">
+                    <span id="elapsed">0:00</span> 
+                    <input type="range" id="track" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                    <span id="trackTime">0:00</span> 
+                </div>
+                
                 </div>
             </div>
 
@@ -34,4 +48,4 @@
     </div>
    </div> 
 </body>
-</html>
+</html>*-9
