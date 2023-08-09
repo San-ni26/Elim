@@ -1,18 +1,27 @@
 // on recuper tout les element 
-const audio = document.querySelector("audio");
-const track = document.querySelector("#track");
-const elapsed = document.querySelector("#elapsed");
-const trackTime = document.querySelector("#track-time");
-const volumeValue = document.querySelector("#volume-value");
-const volume = document.querySelector("#volume");
-const pauseBottone = document.querySelector("#pause-bottone");
-const playBottone = document.querySelector("#play-bottone");
-const stopBottone = document.querySelector("#stop-bottone");
+var audio = document.querySelector("audio")
+var track = document.querySelector("track")
+var elapsed = document.querySelector("elapsed")
+var trackTime = document.querySelector("track-time")
+var volumeValue = document.querySelector("volume-value")
+var volume = document.querySelector("volume")
+var pauseBottone = document.querySelector("pause-bottone")
+var playBottone = document.querySelector("play-bottone")
+var stopBottone = document.querySelector("stop-bottone")
 // on recupert la dure du mp3
-let duration = audio.duration ;
-buiIdDuration(duration);
+let duration = audio.duration;
+
+trackTime.textContent = buildDuration(duration);
  
-function buiIdDuration(duration){
+// on gere le bottone play
+playBottone.addEventListener("click", function(){
+    pauseBottone.style.display = "initial";
+    stopBottone.style.display = "initial";  
+    this.style.display = "none";   
+})
+
+ 
+function buildDuration(duration){
     let minutes = Math.floor (duration /  60);
     let reste = duration % 60; 
     let secondes = Math.floor (reste); 

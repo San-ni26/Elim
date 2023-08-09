@@ -38,3 +38,6 @@
 #pause-bottone, #stop-bottone{
     display: none;
 }
+#play-bottone{
+    cursor: pointer;
+} 
